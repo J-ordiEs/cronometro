@@ -35,4 +35,18 @@ function write() {
     if (h > 24) {
         h = 0;
     }
+
+    mlst = ("0" + mls).slice(-2);
+    st = ("0" + s).slice(-2);
+    mt = ("0" + m).slice(-2);
+    ht = ("0" + h).slice(-2);
+
+    time.innerHTML = `${ht}:${mt}:${st}.${mlst}`;
+}
+
+function start() {
+    write();
+    timeStarted = setInterval(write, 10);
+    btnStart.removeEventListener("click", start);
+    console.log(btnStart);
 }
