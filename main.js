@@ -8,11 +8,12 @@ window.onload = () => {
     btnStart = document.getElementById("btn-start");
     btnPause = document.getElementById("btn-pause");
     btnReset = document.getElementById("btn-reset");
+    event();
 };
 
 function event() {
     btnStart.addEventListener("click", start);
-    btnPause.addEventListener("click", stop);
+    btnPause.addEventListener("click", pause);
     btnReset.addEventListener("click", reset);
 }
 
@@ -48,5 +49,15 @@ function start() {
     write();
     timeStarted = setInterval(write, 10);
     btnStart.removeEventListener("click", start);
-    console.log(btnStart);
+}
+
+function pause() {
+    clearInterval(timeStarted);
+    btnStart.addEventListener("click", start);
+}
+
+function reset() {
+    clearInterval(timeStarted);
+    time.innerHTML = "00:00:00:00";
+    btnStart.addEventListener("click", start);
 }
