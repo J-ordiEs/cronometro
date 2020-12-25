@@ -42,7 +42,7 @@ function write() {
     mt = ("0" + m).slice(-2);
     ht = ("0" + h).slice(-2);
 
-    time.innerHTML = `${ht}:${mt}:${st}.${mlst}`;
+    time.innerHTML = `${ht}:${mt}:${st}:${mlst}`;
 }
 
 function start() {
