@@ -73,4 +73,6 @@ button:hover {
     transition: 0.5s;
     background-color: var(--btn-hover);
     color: var(--btn-hover-text);
+    border-style: outset;
+    border-width: 10px;
 }
