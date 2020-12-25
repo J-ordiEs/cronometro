@@ -74,5 +74,5 @@ button:hover {
     background-color: var(--btn-hover);
     color: var(--btn-hover-text);
     border-style: outset;
-    border-width: 10px;
+    border-width: 5px;
 }
