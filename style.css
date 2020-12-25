@@ -37,6 +37,7 @@ span {
     height: 250px;
     border-radius: 25px;
     border-style: outset;
+    border-width: 10px;
     box-shadow: 11px 17px 22px 0 var(--shadow);
 }
 
